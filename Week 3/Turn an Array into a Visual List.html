@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.p1 {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+</style>
+        </head>    
+<body>
+<p id="List"></p>
+
+<script>
+for (let i = 0; i < 10; i ++) {
+    const ele = document.createElement("h1");
+    ele.innerHTML = "Hello, World";
+    document.body.appendChild(ele);
+}
+
+
+const names = ['steve', 'larry', 'joe', 'shirley', 'steph', 'nate', 'rick', 'emily'];
+let text = names.toString();
+document.getElementById("List").innerHTML = text;
+
+</script>
+
+</body>
+</html>
