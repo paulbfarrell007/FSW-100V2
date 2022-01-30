@@ -1,0 +1,32 @@
+* { /* Resets and Default styling */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.box {
+    border: 2px solid black;
+}
+
+.box > h1 {
+    background-color: dodgerblue;
+}
+ 
+/* Common Breakpoints
+Mobile: 360 x 720
+Tablet: 768 x 1024
+Laptop: 1366 x 768
+High-res laptop or desktop: 1920 x 1080 */
+
+/* the rules here apply to any window above 400px width */
+@media (min-width: 768px) {
+    /* rules in here get applied at breakpoint provided as a parameter to the parenthesis */
+    .box {
+        border: 2px dashed green;
+    }
+
+    .box > h1 {
+        background-color: firebrick;
+    }
+}
